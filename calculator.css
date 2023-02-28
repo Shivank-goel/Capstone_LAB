@@ -1,0 +1,32 @@
+  .calculator {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 250px;
+    margin: 0 auto;
+}
+
+.result-display {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.button-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.button-row button {
+    font-size: 20px;
+    margin: 5px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    background-color: #eee;
+    border: none;
+    cursor: pointer;
+}
+
+.button-row button:hover {
+    background-color: #ddd;
+}
