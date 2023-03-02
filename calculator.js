@@ -44,6 +44,13 @@ function calculate() {
   if (prevResult !== null) {
     input = prevResult + input;
   }
+  if (input.includes('/') && eval(input.split('/')[1]) === 0) {
+ document.getElementById("result").value = "Error";
+ input = "";
+ parenCount = 0;
+ prevResult = null;
+ return;
+}
 
   let result = eval(input);
   document.getElementById("result").value = result;
